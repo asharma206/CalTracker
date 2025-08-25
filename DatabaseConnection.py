@@ -14,7 +14,7 @@ class DatabaseConnection:
     
     # Database connection
     def __init__(self):
-        self.__instance = sqlitecloud.connect("sqlitecloud://cbw5ojggnk.sqlite.cloud:8860/chinook.sqlite?apikey=tp3plza94BybhwihoNuGNmoDlAP7xv2i5PAO4LRv7VM")
+        self.__instance = sqlitecloud.connect("SQLiteConnectionURL")
     
     # This function inserts data into the database(date, food name, calories)    
     def logFood(self,foodName, calories):

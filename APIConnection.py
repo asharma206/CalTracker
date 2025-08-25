@@ -10,8 +10,8 @@ class APIConnection:
         return cls.__instance
     # create connection to Edamam API and assign to instance variable
     def __init__(self):
-        self.__instance = Edamam(nutrition_appid='c12f232b',
-           nutrition_appkey='539d8e19c8ac429b01c1ec653ffe830a',
+        self.__instance = Edamam(nutrition_appid="YourAppId",
+           nutrition_appkey='YourAppKey',
            )
     # This function gets calories from the API based on the passed String    
     def getCalories(self,foodData):
